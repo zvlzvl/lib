@@ -16,8 +16,8 @@
                             <input class="form-control" type="text" name="author_name" value="{{old('author_name', $author->name)}}" placeholder="Autoriaus vardas">
                         </div>
                         <div class="form-group">
-                            <label>PavardÄ—</label>
-                            <input class="form-control" type="text" name="author_surname" value="{{old('author_surname', $author->surname)}}" placeholder="Autoriaus pavardÄ—">
+                            <label>Pavardė</label>
+                            <input class="form-control" type="text" name="author_surname" value="{{old('author_surname', $author->surname)}}" placeholder="Autoriaus pavardė">
                         </div>
                         <div class="form-group list-img">
                             @if($author->portret)
@@ -31,7 +31,7 @@
                             <input class="form-control" type="file" name="author_portret" placeholder="Autoriaus portretas">
                         </div>
                         @csrf
-                        <button type="submit" class="btn">PridÄ—ti</button>
+                        <button type="submit" class="btn">Pridėti</button>
                      </form>
                 </div>
             </div>

@@ -44,6 +44,7 @@ button{
 }
 .btn {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2)  ;
+    margin-top: 10px;
     -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2)  ;
     -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2)  ;
     background: linear-gradient(180deg, rgba(214, 237, 247, 0.664), rgba(255, 255, 255, 0.74)) !important;
@@ -55,7 +56,7 @@ button{
 
     border-radius: 5px;
     margin-left: 5px;
-    padding: 5px;
+    padding: 4px;
     width: auto;
     min-width:66px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -90,7 +91,7 @@ button{
     z-index: 1;
 }
 a.nav-link{
-    color:rgb(210, 245, 250)!important;
+    color:rgb(13, 75, 83)!important;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 div.dropdown-menu.dropdown-menu-right.show{
@@ -98,10 +99,11 @@ div.dropdown-menu.dropdown-menu-right.show{
     backdrop-filter: blur(5px);
     border:2px solid rgba(210, 245, 250, 0.726);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(13, 75, 83);
 }
 
 a#navbarDropdown{
-    color:rgb(210, 245, 250);
+    color:rgb(13, 75, 83);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
