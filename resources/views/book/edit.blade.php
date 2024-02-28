@@ -15,6 +15,7 @@
                             <label>Pavadinimas</label>
                             <input class="form-control" type="text" name="book_title" value="{{old('book_title', $book->title)}}" placeholder="Knygos pavadinimas">
                         </div>
+
                         <div class="form-group">
                             <label>Puslapių skaičius</label>
                             <input class="form-control" type="text" name="book_pages" value="{{old('book_pages', $book->pages)}}" placeholder="Knygos puslapių skaičius">
@@ -24,22 +25,23 @@
                             <input class="form-control" type="text" name="book_isbn" value="{{old('book_isbn', $book->isbn)}}" placeholder="Knygos ISBN kodas">
                         </div>
                         <div class="form-group">
-                            <label>Apie knygą</label>
-                            <textarea id="summernote" type="text" name="book_short_description">{{old('book_short_description', $book->short_description)}}</textarea>
-                        </div>
-                        <div class="form-group">
                             <label>Autorius</label>
-                            <select class="form-select" name="author_id">
+                            <select class="form-control" name="author_id">
                                 <option value="0">Pasirinkti autorių</option>
                                  @foreach ($authors as $author)
                                 <option value="{{$author->id}}" @if ($author->id == old('author_id', $book->author_id)) selected @endif>
                                     {{$author->name}} {{$author->surname}}
                                 </option>
-                            @endforeach
+                                @endforeach
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label>Apie knygą</label>
+                            <textarea id="summernote" type="text" name="book_short_description">{{old('book_short_description', $book->short_description)}}</textarea>
+                        </div>
+
                         @csrf
-                        <button type="submit" class="btn">Pridėti</button>
+                        <button type="submit" class="btn">Saugoti</button>
                      </form>
                 </div>
             </div>
